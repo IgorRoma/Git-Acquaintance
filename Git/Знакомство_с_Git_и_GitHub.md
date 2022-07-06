@@ -340,8 +340,8 @@ git remote add pb https://github.com/paulboone/***.git
 проверим:
 >git remote -v
 ```
-origin	https://github.com/schacon/***.git (fetch)
-origin	https://github.com/schacon/***.git (push)
+origin	https://github.com/user/***.git (fetch)
+origin	https://github.com/user/***.git (push)
 pb	https://github.com/paulboone/***.git (fetch)
 pb	https://github.com/paulboone/***.git (push)
 ```
@@ -356,4 +356,3 @@ From https://github.com/paulboone/***.git
  * [new branch]      master     -> pb/master
  * [new branch]       ***       -> pb/***
  ```
- 
