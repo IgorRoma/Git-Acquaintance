@@ -302,8 +302,6 @@ README-файл на сайте GitHub.
 >git remote -v
 
 ```
-git remote -v
-
 origin  https://github.com/user/***.git (fetch)
 origin  https://github.com/user/***.git (push) 
 ```
