@@ -427,3 +427,34 @@ Git будет выводить это предупреждение каждый
 >git remote show <remote>
 
 выполнив эту команду с некоторым именем, например, origin, вы получите следующий результат:
+
+```
+* remote origin
+  Fetch URL: https://github.com/user/***.git
+  Push  URL: https://github.com/user/***.git
+  HEAD branch: main
+  Remote branches:
+    br_1                         tracked
+    br_2                         tracked
+    br_6                         tracked
+    main                         tracked
+    refs/remotes/origin/br_3     stale (use 'git remote prune' to remove)
+    refs/remotes/origin/br_4     stale (use 'git remote prune' to remove)
+    refs/remotes/origin/br_5     stale (use 'git remote prune' to remove)    
+  Local branches configured for 'git pull':
+    br_1     merges with remote br_1
+    br_2     merges with remote br_2
+    br_3     merges with remote br_3
+    br_4     merges with remote br_4
+    br_5     merges with remote br_5
+    br_6     merges with remote br_6
+    main     merges with remote main
+  Local refs configured for 'git push':
+    br_1 pushes to br_1 (up to date)
+    br_2 pushes to br_2 (up to date)
+    br_6 pushes to br_6 (up to date)
+    main pushes to main (fast-forwardable)
+```
+Она выдаёт URL удалённого репозитория, а также информацию об отслеживаемых ветках. Эта команда любезно сообщает вам, что если вы, находясь на ветке **master**, выполните *git pull*, ветка **master** с удалённого сервера будет автоматически влита в вашу сразу после получения всех необходимых данных. Она также выдаёт список всех полученных ею ссылок.
+
+Это был пример для простой ситуации и вы наверняка встречались с чем-то подобным. Однако, если вы используете Git более интенсивно, вы можете увидеть гораздо большее количество информации от git remote show:
