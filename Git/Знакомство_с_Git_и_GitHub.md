@@ -313,27 +313,27 @@ origin  https://github.com/user/***.git (push)
 >git remote -v 
 
 ```
-bakkdoor  https ://github.com/bakkdoor/***.git (fetch)
+bakkdoor  https://github.com/bakkdoor/***.git (fetch)
 
-bakkdoor  https ://github.com/bakkdoor/***.git (fetch)
+bakkdoor  https://github.com/bakkdoor/***.git (fetch)
 
-bakkdoor  https ://github.com/bakkdoor/***.git (push)
+bakkdoor  https://github.com/bakkdoor/***.git (push)
 
-cho45     https ://github.com/cho45/***.git (fetch)
+cho45     https://github.com/cho45/***.git (fetch)
 
-cho45     https ://github.com/cho45/***.git (push)
+cho45     https://github.com/cho45/***.git (push)
 
-defunkt   https ://github.com/defunkt/***.git (fetch)
+defunkt   https://github.com/defunkt/***.git (fetch)
 
-defunkt   https ://github.com/defunkt/***.git (push)
+defunkt   https://github.com/defunkt/***.git (push)
 
-koke      git ://github.com/koke/***.git (fetch)
+koke      git://github.com/koke/***.git (fetch)
 
-koke      git ://github.com/koke/***.git (push)
+koke      git://github.com/koke/***.git (push)
 
-origin    git @github.com:user/***.git (fetch)
+origin    git@github.com:user/***.git (fetch)
 
-origin    git @github.com:user/***.git (push)
+origin    git@github.com:user/***.git (push)
 ```
 Это означает, что мы можем легко получить изменения от любого из этих пользователей. Возможно, что некоторые из репозиториев доступны для записи и в них можно отправлять свои изменения, хотя вывод команды не даёт никакой информации о правах доступа.
 
