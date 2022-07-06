@@ -314,27 +314,46 @@ origin  https://github.com/user/***.git (push)
 
 ```
 bakkdoor  https://github.com/bakkdoor/***.git (fetch)
-
 bakkdoor  https://github.com/bakkdoor/***.git (fetch)
-
 bakkdoor  https://github.com/bakkdoor/***.git (push)
-
 cho45     https://github.com/cho45/***.git (fetch)
-
 cho45     https://github.com/cho45/***.git (push)
-
 defunkt   https://github.com/defunkt/***.git (fetch)
-
 defunkt   https://github.com/defunkt/***.git (push)
-
 koke      git://github.com/koke/***.git (fetch)
-
 koke      git://github.com/koke/***.git (push)
-
 origin    git@github.com:user/***.git (fetch)
-
 origin    git@github.com:user/***.git (push)
 ```
 Это означает, что мы можем легко получить изменения от любого из этих пользователей. Возможно, что некоторые из репозиториев доступны для записи и в них можно отправлять свои изменения, хотя вывод команды не даёт никакой информации о правах доступа.
 
 Обратите внимание на разнообразие протоколов, используемых при указании адреса удалённого репозитория, подробнее с этим познакомиться можно изучив установку Git на сервер.
+
+#### **Добавление удалённых репозиториев**
+
+В предыдущих разделах мы уже упоминали и приводили примеры добавления удалённых репозиториев, сейчас рассмотрим эту операцию подробнее. Для того, чтобы добавить удалённый репозиторий и присвоить ему имя (*shortname*), просто выполните команду:
+
+>git remote add <имя> <путь>
+```
+git remote add pb https://github.com/paulboone/***.git
+```
+проверим:
+>git remote -v
+```
+origin	https://github.com/schacon/***.git (fetch)
+origin	https://github.com/schacon/***.git (push)
+pb	https://github.com/paulboone/***.git (fetch)
+pb	https://github.com/paulboone/***.git (push)
+```
+Теперь вместо указания полного пути вы можете использовать pb. Например, если вы хотите получить изменения, которые есть у Пола, но нету у вас, вы можете выполнить команду:
+>git fetch pb
+```
+remote: Counting objects: 43, done.
+remote: Compressing objects: 100% (36/36), done.
+remote: Total 43 (delta 10), reused 31 (delta 5)
+Unpacking objects: 100% (43/43), done.
+From https://github.com/paulboone/***.git
+ * [new branch]      master     -> pb/master
+ * [new branch]       ***       -> pb/***
+ ```
+ 
