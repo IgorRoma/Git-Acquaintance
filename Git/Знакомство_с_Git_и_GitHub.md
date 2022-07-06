@@ -314,7 +314,6 @@ origin  https://github.com/user/***.git (push)
 
 ```
 bakkdoor  https://github.com/bakkdoor/***.git (fetch)
-bakkdoor  https://github.com/bakkdoor/***.git (fetch)
 bakkdoor  https://github.com/bakkdoor/***.git (push)
 cho45     https://github.com/cho45/***.git (fetch)
 cho45     https://github.com/cho45/***.git (push)
@@ -345,7 +344,7 @@ origin	https://github.com/user/***.git (push)
 pb	https://github.com/paulboone/***.git (fetch)
 pb	https://github.com/paulboone/***.git (push)
 ```
-Теперь вместо указания полного пути вы можете использовать pb. Например, если вы хотите получить изменения, которые есть у Пола, но нету у вас, вы можете выполнить команду:
+Теперь вместо указания полного пути вы можете использовать *pb*. Например, если вы хотите получить изменения, которые есть у Пола, но нету у вас, вы можете выполнить команду:
 >git fetch pb
 ```
 remote: Counting objects: 43, done.
@@ -356,3 +355,4 @@ From https://github.com/paulboone/***.git
  * [new branch]      master     -> pb/master
  * [new branch]       ***       -> pb/***
  ```
+Ветка **master** из репозитория Пола сейчас доступна вам под именем *pb/master*. Вы можете слить её с одной из ваших веток или переключить на неё локальную ветку, чтобы просмотреть содержимое ветки Пола.
